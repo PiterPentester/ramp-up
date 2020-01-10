@@ -1,0 +1,106 @@
+DevOps interns ramp-up program
+
+Common knowledge areas:
+OS Linux. File system. Processes. Daemons/services. 
+Set up local Linux VM based on ISO downloaded from Internet (Ubuntu 16/18 or CentOS 7 or other).
+OS boot
+Linux file systems (Ext2, Ext3, Ext4). Partitions. File types. Mount points. Fstab. 
+hard/soft links, i-nodes
+cron jobs
+main system logs files (rsyslog)
+Accounts & groups. File system permissions
+Source control
+      https://nvie.com/posts/a-successful-git-branching-model/ 
+git commands (clone, fetch/pull, commit, push, merge)
+create GitHub public repository
+using ssh keys for access to git repository
+git main workflow (own branch with changes. Pull request to develop, merge to qa, etc).
+Choose some php free project (including nginx, MySQL) and fork code to your, previously created, repository
+Docker. Docker files, images, containers, health checks, entry point, env vars
+Setup Docker service
+Docker file main sections
+Docker build
+Docker run (restart)
+Docker image commands
+Docker-compose (up/down) & docker-compose.yml (several apps +network config).
+Ubuntu vs CentOS vs Alpine. Key differences, usage as base for docker images.
+Build Ubuntu base docker image
+Build Centos base docker image
+Build Alpine base docker image
+Docker run it and compare theirs sizes
+Choose more effective image
+Choose some open source web application and fill your previously created repository.
+Build docker image with this application and try run it on docker.
+Performance tools (troubleshooting on OS level). Disk I/O issues diagnostic. command-line-tools-to-monitor-linux-performance 
+CPU usage https://www.tecmint.com/command-line-tools-to-monitor-linux-performance/
+RAM usage
+Disk I/O usage, free space, i-nodes
+Network usage
+List opened files
+Linux process monitoring
+Monitor user activity
+Command line Linux tools: 
+grep
+awk
+sed
+wc
+cut
+tail
+Scripting (bash). simple scripts with loops, if-else, conditions, functions
+Kubernetes (K8s). Minishift (OKD) - create single node cluster on VM.
+Understanding Openshift resource types (aka routes, deploymentconfigs, service, etc)
+Deploy application which has http interface outside into K8s cluster
+Deploy different types of applications on K8s cluster and add possible objects using yaml files.
+Continuous integration: Jenkins
+Continuous integration: VSTS
+Monitoring. Prometheus & alert manager
+Databases - MySQL - basics. command line only, no GUI
+   	 
+
+
+Openshift tasks:
+
+1. Implementation Jenkins CI on Openshift
+a. Create separated openshift project (namespace) for Jenkins CI e.g. Jenkins-CI
+b. Setup Jenkins with following parameters:
+- memory heapspace 2 GB
+- CPU - 1 CPU
+- persistence volume - yes
+c. Setup related docker plugins
+d. Create route
+e. Create (export) openshift template and store it in separated folder into your github repository
+
+2. Implementation Thunder on Openshift
+a. Create build job that will build alpine docker image automatically on change code in repository and push it to local openshift docker registry
+b. Create separated openshift project for Thunder (e.g. Thunder) that will contain the following resources:
+- Thunder deployment
+- MySql deployment
+- Thunder and MySql services
+- Thunder route
+- memory for Thunder pod - request 256 mb - limit 512 mb
+- memory for MySql pod - request 512 mb - limit 512 mb
+- cpu for Thunder pod - request 100 millicore - limit 500 millicore
+- cpu for MySql pod - request 500 millicore - limit 500 millicore
+c. Create (export) openshift template and store it in separated folder into your github repository
+d. Create manual deploy job, that will get latest image from local openshift docker registry and deploy on Thunder project (verify in the job that site online)
+e. Combine those two jobs as build/deploy pipeline
+
+3. Optional tasks
+a. create pull request Jenkins job (configure github and setup jenkins git pull request plugin)
+b. Create Openshift cronjob that will clean up docker cache on cluster one time per day
+   	 
+   	 
+UCB specific trainings
+   	 
+2.1. OpenShift
+2.1.1 - Architecture overview 
+2.1.2 - All main OpenShift objects - purpose and usage. Overview.
+2.1.3 - OpenShift security: users & roles. Secrets
+2.1.4 - Projects. Deployments and builds.
+2.1.5 - Templates.
+2.1.6 - OpenShift (oc) CLI (command line)
+2.1.7 - automated setup environments (kustomize, helm)
+3 
+		
+
+
