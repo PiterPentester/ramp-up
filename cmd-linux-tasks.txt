@@ -1,0 +1,13 @@
+Command line Linux tools:
+
+  grep
+
+  awk
+
+  sed
+
+  wc
+
+  cut
+
+  tail

@@ -1,0 +1,15 @@
+Ubuntu vs CentOS vs Alpine. Key differences, usage as base for docker images.
+
+  Build Ubuntu base docker image
+
+  Build Centos base docker image
+
+  Build Alpine base docker image
+
+  Docker run it and compare theirs sizes
+
+  Choose more effective image
+
+  Choose some open source web application and fill your previously created repository.
+
+  Build docker image with this application and try run it on docker.

@@ -1,0 +1,13 @@
+Source control
+
+  https://nvie.com/posts/a-successful-git-branching-model/
+
+  git commands (clone, fetch/pull, commit, push, merge)
+
+  create GitHub public repository
+
+  using ssh keys for access to git repository
+
+  git main workflow (own branch with changes. Pull request to develop, merge to qa, etc).
+
+  Choose some php free project (including nginx, MySQL) and fork code to your, previously created, repository

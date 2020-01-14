@@ -1,0 +1,14 @@
+OS Linux. File system. Processes. Daemons/services.
+  Set up local Linux VM based on ISO downloaded from Internet (Ubuntu 16/18 or CentOS 7 or other).
+
+  OS boot
+
+  Linux file systems (Ext2, Ext3, Ext4). Partitions. File types. Mount points. Fstab.
+
+  hard/soft links, i-nodes
+
+  cron jobs
+
+  main system logs files (rsyslog)
+
+  Accounts & groups. File system permissions

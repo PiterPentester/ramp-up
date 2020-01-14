@@ -1,0 +1,15 @@
+Performance tools (troubleshooting on OS level). Disk I/O issues diagnostic. command-line-tools-to-monitor-linux-performance
+
+  CPU usage https://www.tecmint.com/command-line-tools-to-monitor-linux-performance/
+
+  RAM usage
+
+  Disk I/O usage, free space, i-nodes
+
+  Network usage
+
+  List opened files
+
+  Linux process monitoring
+
+  Monitor user activity

@@ -1,0 +1,13 @@
+Docker. Docker files, images, containers, health checks, entry point, env vars
+
+  Setup Docker service
+
+  Docker file main sections
+
+  Docker build
+
+  Docker run (restart)
+
+  Docker image commands
+
+  Docker-compose (up/down) & docker-compose.yml (several apps +network config).
